@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    width: 100%;
+    height: 100% ;
+}
+body {
+    background-color: #C7E3F2;
+}
+ul {
+    list-style: none;
+}
+ul li::before{
+    content: '☑️';
+    margin-right: 10px;
+}
+li {
+    margin: 15px 0;
+}
+.wrapper {
+    padding:5.5%;
+    margin:auto;
+}
+.content-container {
+    width: 97%;
+    max-width: 515px;
+    min-width: 291px;
+    height:100%;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.first-section {
+    padding: 51px 29px;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.hero-img {
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+.image {
+    width: 117px;
+    height: 117px;
+    background-position: center;
+    background-image: url("image01.jpg");
+    background-size: contain;
+    border-radius: 50%;
+}
+.name-title {
+    text-align: center;
+
+}
+.name {
+    margin: 15px 0 10px ;
+    font-weight:normal;
+    color: #383838;
+    font-size: 33px;
+}
+.job-title {
+    color: #00000085;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.section {
+    padding: 27.5px 22px;
+}
+.section1 {
+    background-color: #4299FF;
+}
+.section2 {
+    background-color: #3288ED;
+}
+.section3 {
+    background-color: #277DE3;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.section-title {
+    border-bottom: 1px solid rgba(219, 219, 219, 0.493);
+    padding-bottom:15px;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.section-text, a {
+    color: #FFFFFFD4;
+    font-size: 14.7px;
+    line-height: ;
+}
+.section-text:nth-of-type(2) {
+        line-height: 25px;
+}
+.buttons {
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.section3 > p {
+    margin-bottom: 20px;
+}
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttons > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid rgba(219, 219, 219, 0.493);
+    padding: 10px 15px 10px 7.5px;
+    border-radius: 5px;
+    margin: 0 5px 6px 0 ;
+    transition: 0.5s ease all;
+    color: #FFFFFFD4;
+}
+.buttons > a:hover {
+    color: #4BD4EA;
+    border: 1px solid #4BD4EA;
+    transition: 0.5s ease all;
+    
+}
+.buttons > a >img {
+    width: 20px;
+    margin: 0px 10px 0;
+}
+@media only screen and (min-width: 370px) {
+    .section {
+        padding: 37px 30px;
+    }
+}
+@media only screen and (min-width: 740px) {
+    .content-container{
+        max-width: 610px;
+    }
+    .section1, .section2 {
+        border-bottom: 1px solid rgba(219, 219, 219, 0.493);
+    }
+    .section-title {
+        border: none;
+        margin: 0;
+        padding:0;
+        width:100px;
+        text-align: right;
+
+    }
+    .section {
+        display: flex;
+        padding: 44px 51px;
+        box-sizing: border-box;
+    }
+    .divider {
+        border-right: 1px solid rgba(219, 219, 219, 0.493);
+        padding:0px 0px 0px 30px;
+    }
+    .section-text, .buttons {
+        width: 350px;
+        padding: 0px 0 0 30px ;
+        box-sizing:content-box;
+
+    }
+}
+@media only screen and (min-width: 1680px) {
+    .content-container{
+        max-width: 840px;
+    }
+    .first-section {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 91px 56px;
+    }
+    .image {
+        width: 170px;
+        height: 170px;
+    }
+    .name {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    .job-title {
+        font-size: 24px;
+    }
+    .section-title {
+        width:150px;
+        font-size: 24px;
+    }
+    .section {
+        display: flex;
+        padding: 72px 82px;
+        box-sizing: border-box;
+    }
+    .divider {
+        border-right: 1px solid rgba(219, 219, 219, 0.493);
+        padding:0px 0px 0px 50px;
+    }
+    .section-title {
+        
+    }
+    .section1 > p:nth-of-type(2) {
+        line-height: 40px;
+    }
+    .section-text, a {
+        font-size: 21px;
+    }
+    .section-text, .buttons {
+        width: 425px;
+        padding: 0px 0 0 50px ;
+
+    }
+    ul li {
+        line-height: 40px;
+    }
+}
